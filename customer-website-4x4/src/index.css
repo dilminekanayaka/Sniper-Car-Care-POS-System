@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #040a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.08);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(16px);
+}
+
+.hero-glow {
+  background: radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.28), transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(129, 140, 248, 0.25), transparent 52%),
+    radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.22), transparent 55%);
+}
+
+.section-mask {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 15%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0.9) 85%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 15%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0.9) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -1,0 +1,26 @@
+const express = require('express');
+const router = express.Router();
+const publicProductController = require('../controllers/publicProductController');
+const publicOrderController = require('../controllers/publicOrderController');
+const publicCustomerController = require('../controllers/publicCustomerController');
+
+// Public product routes (no authentication required)
+router.get('/products', publicProductController.getProducts);
+router.get('/products/:id', publicProductController.getProduct);
+
+// Public customer routes
+router.get('/customer/by-plate', publicCustomerController.getCustomerByPlate);
+router.get('/customer/by-id', publicCustomerController.getCustomerById);
+
+// Public order routes
+router.post('/orders', publicOrderController.createOrder);
+router.get('/order/:id', publicOrderController.getOrder);
+router.get('/orders/:id', publicOrderController.getOrder);
+router.post('/orders/confirm', publicOrderController.confirmOrder);
+
+// Public payment routes
+router.post('/payments/create-intent', publicOrderController.createPaymentIntent);
+router.post('/payments/confirm', publicOrderController.confirmPayment);
+
+module.exports = router;
+
