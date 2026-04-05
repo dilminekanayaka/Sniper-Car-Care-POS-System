@@ -1,6 +1,6 @@
 # Sniper Car Care POS & ANPR Platform
 
-A complete digital platform for a Dubai-based car service business. It helps manage vehicle intake, services, customer engagement, POS billing, online payments, loyalty rewards, and reporting in one system.
+A completed enterprise-grade digital operations platform for a Dubai-based car service business, built to unify vehicle intake, service management, customer engagement, POS billing, online payments, loyalty rewards, and management reporting in one connected ecosystem.
 
 ![React](https://img.shields.io/badge/React-18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -15,39 +15,36 @@ A complete digital platform for a Dubai-based car service business. It helps man
 
 ## Overview
 
-Sniper Car Care POS & ANPR Platform is a full-stack business system for a modern car care center. It connects staff operations with customer-facing digital flows to make the whole service process faster and easier.
+Sniper Car Care POS & ANPR Platform is a complete full-stack business system designed to modernize how a professional car care center operates from vehicle arrival to service completion. The platform connects internal staff workflows with customer-facing digital journeys, enabling a faster, cleaner, and more automated service model.
 
 ## Highlights
 
-- Vehicle recognition based intake flow
-- Staff and admin dashboard for daily work
+- Vehicle recognition driven intake flow
+- Staff/admin dashboard for day-to-day operations
 - Customer and vehicle registration with plate tracking
 - Product and stock management
 - POS order handling and payment processing
 - Public customer ordering flow
-- Loyalty tracking and free service redemption
+- Loyalty tracking and free-service redemption
 - Feedback collection workflow
-- Analytics, exports, and reporting
-
-## Screenshot
-
-![Sniper Car Care POS System](Doc/screenshots/sniper-car-pos-system.jpeg)
+- Analytics, exports, and management reporting
 
 ## Technology Stack
 
 | Layer | Stack |
 |---|---|
-| Frontend | React 18, Vite, Tailwind CSS |
-| Backend | Node.js, Express, MySQL, JWT, Axios |
+| Frontend | React 18, Vite, Tailwind CSS|
+| Backend | Node.js, Express, MySQL, JWT,  Axios |
 | Database | MySQL |
 | Payments | Stripe |
 | Messaging | Reson8 |
-| Reporting | XLSX, CSV, PDFKit |
+| Reporting | XLSX , CSV, PDFKit |
 | Security | JWT authentication |
+
 
 ### Database Layer
 
-The database layer has these main entities:
+Database Layer have these core entities:
 
 - Users
 - Customers
@@ -68,32 +65,33 @@ The database layer has these main entities:
 
 1. A vehicle arrives at the service center.
 2. The ANPR flow detects or identifies the number plate.
-3. The system checks if the vehicle already exists in the customer database.
-4. If found, the customer record is reused and updated.
-5. A personal customer link can be created and sent automatically.
+3. The system checks whether the vehicle already exists in the customer database.
+4. If matched, the customer record is reused and updated.
+5. A personalized customer link can be generated and sent automatically.
 
 ### Service and POS Operations
 
-1. Staff register customers, services, and orders from the dashboard.
-2. Products are added to orders and stock is updated.
-3. Payments are recorded as digital or manual payments.
-4. Orders and services stay visible to staff in real time.
-5. Managers can monitor business activity through reports and dashboards.
+1. Staff register customers, services, and orders from the internal dashboard.
+2. Products are attached to orders and stock levels are updated.
+3. Payments are recorded through digital or manual methods.
+4. Orders and services remain visible to operational staff in real time.
+5. Managers can monitor business activity through reporting endpoints and dashboards.
 
 ### Customer Journey
 
-1. The customer receives a vehicle-specific or service-specific link.
-2. The customer opens the public website.
-3. The customer views products or service options.
-4. The customer places an order and completes payment.
-5. The order data is synced with the main system.
+1. Customer receives a vehicle-specific or service-specific link.
+2. Customer accesses the public website.
+3. Customer views products or service options.
+4. Customer places an order and completes payment.
+5. Order data is synchronized into the main business system.
 
 ### Retention and Follow-Up
 
-1. Completed services give loyalty points.
-2. Customers can become eligible for a free service.
-3. Feedback requests can be sent after service completion.
-4. Staff and management can review customer feedback and service patterns.
+1. Completed services award loyalty points.
+2. Customers can become eligible for free-service redemption.
+3. Feedback requests can be triggered after completion.
+4. Staff and management can review customer sentiment and operational patterns.
+
 
 ## Project Structure
 
@@ -109,6 +107,7 @@ The database layer has these main entities:
 `-- README.md
 ```
 
+
 ## Local Setup
 
 ### Prerequisites
@@ -116,6 +115,7 @@ The database layer has these main entities:
 - Node.js 18+
 - npm
 - MySQL 8+
+
 
 ### Backend
 
@@ -127,7 +127,7 @@ npm run dev
 
 ### Customer Websites
 
-Run each app separately:
+Run each app independently:
 
 ```powershell
 cd customer-website
@@ -153,3 +153,6 @@ npm run dev
 - `staff@sniper.com` / `staff123`
 
 These credentials are only for local development.
+
+
+
