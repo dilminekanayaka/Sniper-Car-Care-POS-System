@@ -29,6 +29,10 @@ Sniper Car Care POS & ANPR Platform is a complete full-stack business system des
 - Feedback collection workflow
 - Analytics, exports, and management reporting
 
+## Screenshot
+
+![Sniper Car Care POS System](./Doc/screenshots/sniper-car-pos-system.jpeg)
+
 ## Technology Stack
 
 | Layer | Stack |
