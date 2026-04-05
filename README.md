@@ -154,15 +154,5 @@ npm run dev
 
 These credentials are only for local development.
 
-## Key Reference Files
-
-- [backend/server.js](/F:/GITHUB/Sniper-Car-Care-POS-System/backend/server.js)
-- [backend/controllers/anprController.js](/F:/GITHUB/Sniper-Car-Care-POS-System/backend/controllers/anprController.js)
-- [backend/controllers/serviceController.js](/F:/GITHUB/Sniper-Car-Care-POS-System/backend/controllers/serviceController.js)
-- [backend/controllers/paymentController.js](/F:/GITHUB/Sniper-Car-Care-POS-System/backend/controllers/paymentController.js)
-- [backend/controllers/publicOrderController.js](/F:/GITHUB/Sniper-Car-Care-POS-System/backend/controllers/publicOrderController.js)
-- [backend/controllers/analyticsController.js](/F:/GITHUB/Sniper-Car-Care-POS-System/backend/controllers/analyticsController.js)
-- [database/schema.sql](/F:/GITHUB/Sniper-Car-Care-POS-System/database/schema.sql)
-- [Doc/Sniper_Car_Care_ANPR_POS_System_Proposal.docx](/F:/GITHUB/Sniper-Car-Care-POS-System/Doc/Sniper_Car_Care_ANPR_POS_System_Proposal.docx)
 
 
